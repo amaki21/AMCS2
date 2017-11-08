@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108867068-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-108867068-2');
+    </script>
+
+    <title>ChalkLit</title>
+</head>
+
+<body id="myBody" scroll="no" style="overflow: hidden">
+    <h1><a href="/alec"> Alec Maki </a></h1>
+    
+    <h1 onclick="clicked();" style="font-size: 100px; position: absolute; top: 50%; left: 50%; transform: translateX(-50%) translateY(-50%);">ChalkLit</h1>
+
+    <script>
+        function clicked() {
+            var body = document.getElementById('myBody');
+            if (body.style.backgroundColor == 'black') {
+                body.style.backgroundColor = 'white';
+                body.style.color = 'black';
+            } else {
+                body.style.backgroundColor = 'black';
+                body.style.color = 'white';
+            }
+        }
+    </script>
+    
+    <canvas id="canvas" style="display: block;">
+            Sorry, you are using an unsupported browser.
+        </canvas>
+    <script src="main.js"></script>
+</body>
+
+</html>
